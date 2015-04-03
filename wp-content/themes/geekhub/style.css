@@ -1,0 +1,374 @@
+/*Theme Name: Geek Hub
+Theme URI: http://www.yudin.com.ua/
+Description: Geek Hub
+Version: 1.0
+Author: Gaik
+Author URI: http://www.softline.net/
+Tags: 
+*/
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:12px Arial, sans-serif; background:#fff; color:#000; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:none; }
+a:hover                        { color:#f85b4e; text-decoration:none; }
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+
+@font-face { 
+	font-family: MyriadPro;
+	src: url(fonts/MyriadPro-Regular.otf); 
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+body {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.active a, .current-menu-item a {
+	color: #f85b4e !important;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.headerwrap {
+	background: url("images/bg.png");
+	box-shadow: inset 0px 0px 40px 10px rgba(143,174,187,1);
+	margin: 0 auto;
+}
+
+.reg {
+	background: url("images/bubbls.png") no-repeat;
+	background-position: center 50px;
+	overflow: hidden;
+	border-top: 1px solid #8ea8b3;
+	margin: 0 auto;
+	width: 900px;
+}
+
+.reg h4 {
+	padding-top: 80px;
+}
+
+.header {
+	width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.logo {
+	float: left;
+	margin-top: 20px;
+}
+
+ul.headernav li {
+	display: inline;
+	padding-left: 30px;
+}
+
+ul.headernav li a {
+	font-size: 16px;
+	font-family: MyriadPro, sans-serif;
+	color: #396375;
+	text-transform: uppercase;
+}
+
+ul.headernav li a:hover {
+	 color:#f85b4e;
+}
+
+ul.headernav {
+	float: right;
+	padding-top: 45px;
+}
+
+.sfmsb-follow-social-buttons {
+	margin-top: 45px;
+	overflow: hidden;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*ul.social li {*/
+	/*display: inline;*/
+	/*padding-right: 10px;*/
+/*}*/
+
+/*ul.social li img {*/
+	/*border-radius: 12px;*/
+	/*background-color: #a9bac3;*/
+/*}*/
+
+/*ul.social li img:hover {*/
+	/*border-radius: 23px;*/
+	/*background-color: #8fb4c0;*/
+/*}*/
+
+.geekhub {
+	display: block;
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+}
+
+h4 {
+	font-size: 53px;
+	font-family: "Trebuchet MS", sans-serif;
+	color: #246987;
+	text-align: center;
+}
+
+.registration {
+	height: 80px;
+	width: 310px;
+}
+
+.registration a {
+	background: url("images/registration.png") no-repeat;
+	font-size: 26px;
+	font-family: "Trebuchet MS", sans-serif;
+	color: #fff;
+	padding: 55px;
+	display: block;
+	background-position: center;
+	text-align: center;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+p.foreword {
+	font-size: 15px;
+	color: #4b7589;
+	width: 700px;
+	display: block;
+	margin: 0 auto;
+	padding: 40px 0 0px 0;
+}
+
+p.foreword a {
+	font-size: 15px;
+}
+
+.content h2 {
+	font-size: 20px;
+	font-weight: normal;
+	font-family: "Trebuchet MS", sans-serif;
+	color: #437183;
+	line-height: 40px;
+	text-align: center;
+	letter-spacing: 10px;
+	border-bottom: 1px solid #a7c3cf;
+}
+
+ul.courses {
+	overflow: hidden;
+	margin: 30px 0 5px 0;
+}
+
+ul.courses li img { 
+	display: block;
+	float: left;
+	margin-right: 25px;
+
+}
+
+ul.courses h3 a {
+	font-size: 28px;
+	font-weight: normal;
+	font-family: "Trebuchet MS", sans-serif;
+	color: #f03178;
+	padding-bottom: 20px;
+}
+
+.courses p {
+	display: block;
+	font-size: 12px;
+	line-height: 17px;
+	color: #4b7589;
+	overflow: hidden;
+}
+
+.courses li {
+	width: 420px;
+	float: left;
+	margin-bottom: 55px;
+}
+
+.courses li:nth-child(2n+1) {
+	clear: both;
+	margin-right: 50px;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.footerwrap {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#vk_groups {
+	float: left;
+	margin: 20px 35px 0 0;
+}
+
+.certificate {
+	float: left;
+}
+
+.sponsors {
+	margin: 20px 0 0 35px;
+	width: 275px;
+	float: left;
+}
+
+.sponsors h3 {
+	border-bottom: 1px solid #a7c3cf;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: "Trebuchet MS", sans-serif;
+	color: #447184;
+	width: 275px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.sponsors ul li {
+	display: inline-block;
+	margin: 25px 0px 0px 35px;
+}
+
+.sponsors ul {
+	text-align: center;
+}
+
+.sponsors ul li:first-child {
+	margin: 25px 0px 0px 0;
+}
+
+.likeinfo {
+	overflow: hidden;
+}
+
+.footer {
+	clear: both;
+	border-top: 1px solid #a7c3cf;
+	margin: 60px 0 85px 0;
+}
+
+.footernav {
+	padding-top: 20px;
+	float: left;
+}
+
+.footernav li {
+	display: inline;
+	margin-right: 22px;
+}
+
+.footernav li a {
+	font-weight: bold;
+	color: #396375;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+.footernav li a:hover {
+	color:#f85b4e;
+}
+
+.copyright {
+	float: right;
+	font-size: 11px;
+	color: #a7c3cf;
+	padding-top: 20px;
+}
+
+.sponsorslogo a {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.sponsorslogo a:hover {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(0%);
+}
+
+
+
+/*================PAGE===================*/
+
+.about {
+	float: left;
+	margin: 15px 30px 10px 35px;
+}
+
+.page p {
+	overflow: hidden;
+	color: #4C7689;
+	font-size: 14px;
+	line-height: 22px;
+	margin-right: 35px;
+	padding-top: 15px;
+}
+
+.page h1 {
+	font-size: 40px;
+	font-weight: 300;
+	color: #4C7689;
+	border-bottom: 1px solid #A7C3CF;
+	margin: 30px 0 20px 0;
+}
